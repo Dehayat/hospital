@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206536c6175570548993fec4e914c9c6, type: 3}
+  m_Name: Day3
+  m_EditorClassIdentifier: Assembly-CSharp::Day
+  rules: '- Patients without valid insurance must be Denied.
+
+
+    - EmergencyOnly
+    covers Critical cases only.
+
+
+    - BasicPlan does not authorize inpatient Treatment.
+
+
+    -
+    Treatment requires PremiumCare authorization'
+  patients:
+  - {fileID: 11400000, guid: d3128c1479001454889fbc40dc1dbb94, type: 2}
+  - {fileID: 11400000, guid: 33240b9d3546776469deecbd34036c98, type: 2}
+  - {fileID: 11400000, guid: 34710e064585b51489e9af61f916835d, type: 2}
+  - {fileID: 11400000, guid: a5c90c371f2dc7449a2e985df8937fef, type: 2}
+  - {fileID: 11400000, guid: 1b2b9e2f71f095d4f93e17cc8c0945d9, type: 2}
+  - {fileID: 11400000, guid: b02776553df07a244bec235a7fddb6c3, type: 2}
+  beforeStory: '<b>Administrative Directive</b>
+
+    Critical care allocation now
+    requires enhanced coverage validation.'
